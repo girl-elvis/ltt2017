@@ -1,0 +1,31 @@
+        <header uk-sticky="sel-target: header; cls-active: uk-navbar-sticky">        
+            <div class="uk-container">
+                <nav class="uk-navbar-container" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="<?php echo bloginfo('url'); ?>" class="uk-navbar-item uk-logo">
+                            <img src="<?php echo bloginfo('template_url'); ?>/dist/images/logo.svg">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            
+                            <?php          
+                            $defaults = array(
+                                'menu'              => 'Main Nav',
+                                'theme_location'    => 'primary_navigation',
+                                'container'         => '',
+                                'items_wrap'        => '%3$s'
+                            );
+
+                            wp_nav_menu($defaults); 
+                            ?>
+
+                            <li><a href="#" uk-toggle="target: #search"><span uk-icon="icon: search"></span></a></li>
+                        </ul>
+                        <div class="uk-navbar-item uk-hidden@m uk-padding-remove-right">
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>

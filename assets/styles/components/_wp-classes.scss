@@ -1,0 +1,64 @@
+// WordPress Generated Classes
+// http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+
+// Media alignment
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+.aligncenter {
+	@extend .uk-align-center;
+}
+.alignleft,
+.alignright {
+ // margin-bottom: ($line-height-computed / 2);
+  height: auto;
+}
+
+
+.alignleft{
+	 @extend .uk-float-left;
+    @extend .uk-margin-right;
+}
+.alignright{
+	 @extend .uk-float-right;
+    @extend .uk-margin-left;
+}
+
+
+figcaption {
+	font-size: small;
+	background: #eee none repeat scroll 0% 0%;
+	padding: 0.5em;
+}
+
+
+// NEED TO REDO THIS WITH UIkit
+// @media (min-width: $breakpoint-medium) {
+//   // Only float if not on an extra small device
+//   .alignleft {
+//     @extend .uk-float-left;
+//     @extend .uk-margin-right;
+//     //margin-right: ($line-height-computed / 2);
+//   }
+//   .alignright {
+//     float: right;
+//     //margin-left: ($line-height-computed / 2);
+//   }
+// }
+
+// Captions
+// .wp-caption {
+//   @extend .thumbnail;
+// }
+// .wp-caption-text {
+//   //padding: $thumbnail-caption-padding;
+// }
+
+// // Text meant only for screen readers
+// .screen-reader-text {
+//   @extend .sr-only;
+//   @extend .sr-only-focusable;
+// }

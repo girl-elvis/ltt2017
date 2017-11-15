@@ -1,0 +1,70 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700&text=LEMONTRUSlemontrus);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Josefin+Sans:400,600);
+$lemontreefont: "Amatic SC",sans-serif;
+
+// IMPORTANT
+$base-body-line-height:1.5em;
+
+
+// Container widths
+$utility-container-padding-horizontal:           75px ;
+
+$utility-container-large-padding-horizontal: 45px;
+
+
+// Other text and font stuff
+$base-body-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-h2-font-size: 25px;
+$navbar-brand-font-size : 60px;
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #009356; // Dk green
+
+// Lemon Tree new colours
+// #009356 // Dk Green
+$brand-dark: #004A16 ;
+
+$brand-colour1: #1EC0DA; // blue
+$brand-colour2: #C15D25; // brick
+
+$brand-colour3: #CA9182; // salmon
+$brand-colour4: #7ACFE1; // lt blue
+$brand-colour5: #ACD08B; // lt green
+$brand-colour6: #FECA7D; // lt orange
+$brand-colour7: #5DB2C5; // duller blue
+$brand-colour8: #FDB813; // bright orange
+$brand-colour9: #C15A88; // pink
+
+$brand-dark1: #043274; // dk blue
+// End LT colors
+
+$base-link-color: $brand-primary;
+$base-link-hover-color: $brand-dark;
+
+// Nav
+
+$navbar-brand-hover-color:  $brand-primary;
+ $navbar-background:                              transparent;
+
+ $navbar-link-color:                              #eee;
+
+$navbar-nav-height:                              auto;
+$navbar-nav-line-height:                         1.5em;
+ $navbar-nav-color:                               #eee !default;
+$navbar-nav-font-size: 18px	;
+
+$dropdown-navbar-animation: none;
+// $dropdown-background: rgba(#fff, 0.6);
+// $dropdown-navbar-background: rgba(#fff, 0.6);
+
+
+$overlay-icon:  '\f0ed';
+//$dropdown-width: 0;

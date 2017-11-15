@@ -1,0 +1,85 @@
+.uk-navbar-nav {   
+    background: #fff;
+    
+    li {
+        a {
+            @include transition(all 0.3s ease);
+            font-size: 16px;
+            color: #414141;
+            font-family: $font_main !important;
+            font-weight: 400;
+            height: 60px;
+            padding: 0 25px;
+            
+            &:hover {
+                background: $green;
+                color: #fff;
+            }
+        }
+    }
+    
+    li.current_page_item {
+        a {
+            background: #333;
+            color: #fff;
+        }
+    }
+}
+
+.uk-logo {
+    font-family: $font_main;
+    
+    img {
+        width: 300px;
+        height: auto;
+        max-width: 100%;
+        
+        @include breakpoint(sm) {
+            width: 340px;
+        }
+    }
+}
+
+.uk-navbar-item {
+    height: 80px;
+}
+
+.uk-navbar-container {
+    background: #fff !important;
+}
+
+
+/* Offcanvas --------------- */
+
+.uk-offcanvas-bar {
+    background: #fff;
+    
+    .uk-close {
+        color: rgba(0, 0, 0, 0.5);
+        
+        &:hover {
+            color: #333;
+        }
+    }
+    
+    ul {   
+        li {
+            a {
+                color: #333 !important;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 400;
+
+                &:hover {
+                    color: $green !important;
+                }
+            }
+        }
+        
+        li.current_page_item {
+            a {
+                color: $green !important;
+            }
+        }
+    }
+}

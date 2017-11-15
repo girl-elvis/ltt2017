@@ -1,0 +1,14 @@
+footer {
+	//background: $brand-dark;
+	padding: 1em;
+	margin-top: 5em;
+	border-top: 5px solid $brand-dark;
+	> div {
+		margin:  1em;
+		section {
+			// @extend .uk-panel;
+			// @extend .uk-panel-box;
+		}
+
+	}
+}

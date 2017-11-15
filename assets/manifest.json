@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+       "scripts/plugins/owl.carousel.min.js",
+        "scripts/plugins/uikit.min.js",
+        "scripts/plugins/uikit-icons.min.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss",
+                "styles/plugins/uikit.min.css",
+        "styles/plugins/owl.carousel.min.css",
+        "styles/plugins/owl.theme.default.min.css"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://lemontree/"
+  }
+}

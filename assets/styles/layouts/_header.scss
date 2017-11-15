@@ -1,0 +1,81 @@
+
+
+nav {	
+	.uk-navbar-brand{
+		// margin-top: -80px;
+		// margin-bottom: -45px;
+		font-family: $lemontreefont;
+		font-variant: small-caps;
+	    text-transform: capitalize;
+	    line-height: 1em;
+	    background: url(../images/line.png) no-repeat 80% 100%;
+	    padding-left: 0;
+		margin-left: 0.2em;
+		padding-bottom: 0.1em;
+		font-weight: 700;
+	}
+	.tagline-sm {
+		background: rgba(255,255,255, 0.4);
+		margin-right: 5px;
+		h4{font-family: "Josefin Sans";}
+		// h2
+		 h3{font-weight: 600;font-family: "Josefin Sans";}
+
+	}
+}
+
+.brochure img{
+	background: url('../images/booklet.jpg');
+	margin: 0 auto;
+}
+
+
+.mobmenu-button {
+	background: url('../images/leaf.png');
+}
+.nav {
+	//@extend .uk-navbar-nav;
+	@extend .uk-hidden-small;
+	flex-wrap: nowrap;
+	//width: 100%;
+	margin: 0 auto;
+	float: none;
+
+
+	> li{
+		flex-grow: 1;
+		flex-shrink: 1;
+
+		&:nth-child(1){background: $brand-primary;}
+		&:nth-child(2){background: $brand-colour2;}
+		&:nth-child(3){background: $brand-colour8;}
+		&:nth-child(4){background: $brand-colour1;}
+		&:nth-child(5){background: $brand-colour5;}
+		&:nth-child(6){background: $brand-colour6;}
+		&:nth-child(7){background: $brand-colour7;}
+		a {
+			//display: table-caption;
+			
+			&:hover{
+				background: rgba($brand-primary, 0.5);
+				color: #fff;
+			}
+			
+			//@extend .uk-h2;
+		}
+		> a {
+				padding-top: 10px;
+				padding-bottom: 12px;	
+		}
+
+		
+	}
+}
+.uk-dropdown-small{
+	min-width: 0;
+	a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+}
+.mobmenu-button {z-index: 100;}
