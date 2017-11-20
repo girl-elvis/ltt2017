@@ -37,8 +37,8 @@ function setup() {
   add_theme_support('post-thumbnails');
     add_image_size( 'definition', 600, 600 );
     add_image_size( 'boxtop', 373, 249, array( 'center', 'center' ) );
-    add_image_size('homeslider', 1920,1080);
-    add_image_size('pagetop', 1920,822);
+    add_image_size('homeslider', 1920,1080, array( 'center', 'center' ));
+    add_image_size('pagetop', 1920,822, array( 'center', 'center') );
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats

@@ -1,11 +1,20 @@
 <div class="owl-carousel owl-theme home-carousel">
     
-    <?php
-    if( have_rows('slide') ):
-        while ( have_rows('slide') ) : the_row();
+  
+      <?php
+            if( have_rows('slide') ):
+                while ( have_rows('slide') ) : the_row();
+                       $image = get_sub_field('image');
+            $size = 'homeslider'; // (thumbnail, medium, large, full or custom size)
+
+            if( $image ) {
+                $printimage = wp_get_attachment_image_src( $image, $size );
+                //print_r($printimage[0]);
+                //$printimage = wp_get_attachment_image( $image, $size );
+            }
             ?>
     
-           <div class="item" style="background-image: url('<?php the_sub_field('image'); ?>');">
+<div class="item" style="background-image: url('<?php echo $printimage[0]; ?>') ">
                 <div class="uk-container">
                     <div class="blurb">
                         <h1><?php the_sub_field('text'); ?></h1>
