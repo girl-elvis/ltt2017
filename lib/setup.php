@@ -36,7 +36,9 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
     add_image_size( 'definition', 600, 600 );
-add_image_size( 'boxtop', 373, 249, array( 'center', 'center' ) );
+    add_image_size( 'boxtop', 373, 249, array( 'center', 'center' ) );
+    add_image_size('homeslider', 1920,1080);
+    add_image_size('pagetop', 1920,822);
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -107,7 +109,7 @@ function assets() {
     wp_enqueue_script('comment-reply');
   }
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-
+ wp_enqueue_script('g/js', Assets\asset_path('scripts/library.min.js'), ['jquery'], null, true);
 
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

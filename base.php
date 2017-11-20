@@ -29,7 +29,6 @@ use Roots\Sage\Wrapper;
       wp_footer();
     ?>
     
-    <!-- Compiled scripts -->    
-    <script src="<?php echo bloginfo('template_url'); ?>/assets/scripts/library.min.js" type="text/javascript"></script>
+
     </body>
 </html>

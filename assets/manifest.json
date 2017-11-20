@@ -12,7 +12,7 @@
     "main.css": {
       "files": [
         "styles/main.scss",
-                "styles/plugins/uikit.min.css",
+        "styles/plugins/uikit.min.css",
         "styles/plugins/owl.carousel.min.css",
         "styles/plugins/owl.theme.default.min.css"
       ],
@@ -21,6 +21,11 @@
     "customizer.js": {
       "files": [
         "scripts/customizer.js"
+      ]
+    },
+     "library.min.js": {
+      "files": [
+        "scripts/library.min.js"
       ]
     }
   },
