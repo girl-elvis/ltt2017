@@ -1,8 +1,8 @@
-        <div class="owl-carousel owl-theme home-carousel">
-            
-            <?php
-            if( have_rows('slide') ):
-                while ( have_rows('slide') ) : the_row();
+<div class="owl-carousel owl-theme home-carousel">
+    
+    <?php
+    if( have_rows('slide') ):
+        while ( have_rows('slide') ) : the_row();
             ?>
     
            <div class="item" style="background-image: url('<?php the_sub_field('image'); ?>');">
@@ -16,8 +16,8 @@
             </div>
             
             <?php
-                endwhile;
-            endif;
-            ?>
-            
-        </div>
+        endwhile;
+    endif;
+    ?>
+    
+</div>
