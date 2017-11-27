@@ -4,8 +4,7 @@
     
     <title><?php the_title(); ?></title>
     
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700"> 
+
     
     <?php wp_head(); ?>
 </head>

@@ -48,14 +48,16 @@ header {
 
 
 /* Slider ---------------- */
-
-.owl-carousel {
+.home .owl-carousel {
     .item {
         width: 100%;
         height: calc(100vh - 59px);   
         @include background-size(cover);
         background-position: center center;
-
+        }
+    }
+.owl-carousel {
+    .item {
         .uk-container {
             position: relative;
             height: 100%;
@@ -64,18 +66,27 @@ header {
                 position: absolute;
                 bottom: 0;
                 background: rgba(0, 0, 0, 0.4);
-                padding: 25px 35px;
+                padding: 10px;
                 width: 100%;
-
-                @include breakpoint(sm) {
-                    width: auto;
-                    max-width: 56%;
+                left: 0;
+                right: 0;
+                box-sizing: border-box;
+                @include breakpoint(md) {
+                    left: auto;
+                    right: auto;
+                    box-sizing: content-box;
+                    width: 55%;
+                    padding: 25px 35px;
                 }
 
                 h1 {
                     color: #fff;
-                    margin: 0 0 40px 0;
+                    margin: 0 0 10px 0;
                     padding: 0;
+                    @include breakpoint(md) {
+                        margin: 0 0 40px 0;
+                    }
+
                 }
             }
         }

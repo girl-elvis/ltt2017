@@ -12,7 +12,13 @@
             ?>
     
         <div  class="item">
-            <img  src="<?php echo $printimage[0]; ?>">          
+            <img  src="<?php echo $printimage[0]; ?>">  
+             <div class="uk-container">
+                    <div class="blurb">
+                        <h1><?php the_sub_field('text'); ?></h1>
+                   
+                    </div>
+                </div>        
         </div>
             
             <?php

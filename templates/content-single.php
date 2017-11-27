@@ -1,16 +1,19 @@
 <?php 
 while (have_posts()) : the_post(); 
-$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
+$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "pagetop");
 ?>
 
-    
-<div class="story_head" style="background-image: url('<?php echo $imgsrc[0]; ?>');" uk-parallax="bgy: -400">
+<?php if( have_rows('slide') ) {
+    get_template_part('templates/partial', 'pageowlcarousel'); 
+} else { ?>
+   <div class="story_head" style="background-image: url('<?php echo $imgsrc[0]; ?>');" >
     <div class="uk-container">
         <div class="titling">
             <h1><?php the_title(); ?></h1>
         </div>
     </div>
-</div>
+</div> 
+<?php }  ?>
 
  <?php get_template_part('templates/partial', 'breadcrumb'); ?>
 
@@ -42,9 +45,9 @@ $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full
     <?php //get_template_part('templates/stories'); ?>
 
     <?php 
-   if(is_singular( 'post' )) {
-        get_template_part('templates/content', 'related');
-    }
+   // if(is_singular( 'post' )) {
+   //      get_template_part('templates/content', 'related');
+   //  }
     ?>
 
 <?php endwhile; ?>

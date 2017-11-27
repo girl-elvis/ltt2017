@@ -70,9 +70,9 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_widget' => '<div><section class="widget %1$s %2$s uk-padding uk-padding-remove-top">',
+    'after_widget'  => '</section></div>',
+    'before_title'  => '<h3 class="uk-light">',
     'after_title'   => '</h3>'
   ]);
 }
@@ -100,7 +100,7 @@ function display_sidebar() {
  */
 function assets() {
 
-  wp_enqueue_script( 'google_fonts', 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Didact+Gothic');
+  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Comfortaa:300,400,700|Didact+Gothic');
    //wp_enqueue_style('uikit/css', Assets\asset_path('styles/uikit.min.css'), false, null);
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'));
 
@@ -108,8 +108,9 @@ function assets() {
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
- wp_enqueue_script('g/js', Assets\asset_path('scripts/library.min.js'), ['jquery'], null, true);
+  wp_enqueue_script('g/js', Assets\asset_path('scripts/library.min.js'),  array('jquery'), null, true);
+ 
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), array('jquery'), null, true);
 
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

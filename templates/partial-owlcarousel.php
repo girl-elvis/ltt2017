@@ -1,12 +1,9 @@
-<div class="owl-carousel owl-theme home-carousel">
-    
-  
+<div class="owl-carousel owl-theme carousel">
       <?php
             if( have_rows('slide') ):
                 while ( have_rows('slide') ) : the_row();
                        $image = get_sub_field('image');
-            $size = 'homeslider'; // (thumbnail, medium, large, full or custom size)
-
+                       $size = (is_front_page() ? 'homeslider' : 'pagetop'); // different size slider on homepage
             if( $image ) {
                 $printimage = wp_get_attachment_image_src( $image, $size );
                 //print_r($printimage[0]);

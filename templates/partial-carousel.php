@@ -1,19 +1,22 @@
-        <div class="uk-slideshow" uk-slideshow="autoplay: true; pause-on-hover: true; autoplay-interval: 7000; ratio: 9:6">
+        <div class="uk-slideshow" uk-slideshow="autoplay: true; pause-on-hover: true; autoplay-interval: 7000; ">
              <ul class="uk-slideshow-items">
             <?php
             if( have_rows('slide') ):
                 while ( have_rows('slide') ) : the_row();
             ?>        
          <?php 
-            $video = get_sub_field('video');
+            // $video = get_sub_field('video');
             $image = get_sub_field('image');
-                if($video){
+            $size = 'homeslider'; // (thumbnail, medium, large, full or custom size)
+            $printimage = wp_get_attachment_image_src( $image, $size );
+            
+                // if($video){
 
-                     echo '<li class=""><iframe src="'. $video . '" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>';
-                } else {
-                     echo '<li class="item" style="background-image: url('. $image . '); ">';
-                     echo '<img src="'. $image . '" alt="" uk-cover>'; 
-                }
+                //      echo '<li class=""><iframe src="'. $video . '" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>';
+                // } else {
+                     echo '<li class="item" style="background-image: url('. $printimage[0] . '); ">';
+                     echo '<img src="'. $printimage[0] . '" alt="" uk-cover>'; 
+                // }
             ?>
 
             

@@ -27,7 +27,7 @@
                             <h3 class="uk-position-bottom uk-light uk-padding-small uk-margin-remove" style=""><?php the_sub_field('block_title'); ?></h3></a>
                         </div>
                         <div class="uk-card-body uk-padding-small uk-margin-bottom">
-                            <h4 sty><?php the_sub_field('block_text'); ?></h4>
+                            <h4 ><?php the_sub_field('block_text'); ?></h4>
                             <a href="<?php echo $permalink; ?>" class="uk-position-cover" >
                            <a href="<?php echo $permalink; ?>" class="uk-position-small uk-position-bottom-right " >Find out more</a>
                            <div></div>

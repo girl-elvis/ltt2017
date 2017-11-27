@@ -19,15 +19,16 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        //  $('.owl-carousel').owlCarousel({
-        //     items: 1,
-        //     loop: true,
-        //     autoplay: true,
-        //     nav: true,
-        //     navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-        //     autoplayHoverPause: true,
-        //     autoplayTimeout: 3000
-        // });
+         $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            nav: true,
+            navText: ["<span class='uk-position-center-left'   uk-icon='icon:chevron-left;ratio: 4'></span>","<span class='uk-position-center-right'  uk-icon='icon:chevron-right;ratio: 4'></span>"],
+            dots: false,
+            autoplayHoverPause: true,
+            autoplayTimeout: 3000
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

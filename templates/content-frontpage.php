@@ -1,4 +1,5 @@
- <?php get_template_part('templates/partial', 'owlcarousel'); ?>
+ <?php 
+ get_template_part('templates/partial', 'owlcarousel'); ?>
     
         <!-- Intro -->
     <div class="home-content yellow uk-padding" style="background-color: #fbef85;">
@@ -14,39 +15,7 @@
             </div>  
         </div>
 
-                
-                <?php
-                // 				$repeater = get_field('section_1_blocks');
-                // 						foreach( $repeater as $row ){
-                // 						//$row now contains all the subfields in this row of the repeater..
-                // 						print_r($row);
-                // 					}
-
-                //  $text = get_field('main_button_text');
-                // 				$url = get_field('main_button_url');
-
-
-                // $blocks1 = get_post_meta( get_the_ID(), 'section_1_blocks_block', true );
-                // if( $blocks1 ) {
-                //   for( $i = 0; $i < $blocks1; $i++ ) {
-                //     $title = esc_html( get_post_meta( get_the_ID(), 'section_1_blocks_block_' . $i . '_block_title', true ) );
-                //       $text =  get_post_meta( get_the_ID(), 'section_1_blocks_block_' . $i . '_block_text', true );  
-                //       $link = esc_html( get_post_meta( get_the_ID(), 'section_1_blocks_block_' . $i . '_block_link', true ) );  
-                // 
-                //     
-                //    
-                //     // Build the video box
-                //     echo $title . '<br />';
-                //     echo $text . '<br />';
-                //     print_r($link);
-                //     
-                //   }
-                // }
-                ?>
-        
-        
-
-        <?php get_template_part('templates/content', 'news'); ?>
+        <?php get_template_part('templates/partial', 'featured'); ?>
         
         
         
